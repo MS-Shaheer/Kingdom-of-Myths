@@ -1,0 +1,57 @@
+<div class="d-flex flex-row bd-highlight mb-3">
+
+    <div class="form-group row" style="width: 60%;">
+      <label for="villianName" class="col-sm-2">Villian's Name</label>
+      <input type="text" name="villianName" id="villianName" class="form-control" [(ngModel)]="villianName"
+        placeholder="Enter Villian's Name">
+  
+      <label for="dob" class="col-sm-2">Date of Birth</label>
+      <input type="date" name="dob" id="dob" class="form-control" [(ngModel)]="dob"
+        placeholder="Enter Villian's Date of Birth">
+  
+      <label for="age" class="col-sm-2">Age</label>
+      <input type="text" name="age" id="age" class="form-control" [(ngModel)]="age" placeholder="Enter villian's Age">
+  
+      <label for="strength" class="col-sm-2">Strength</label>
+      <input type="text" name="strength" id="strength" class="form-control" [(ngModel)]="strength"
+        placeholder="Enter Villian's Strength">
+  
+      <label for="weakness" class="col-sm-2">Weakness</label>
+      <input type="text" name="weakness" id="weakness" class="form-control" [(ngModel)]="weakness"
+        placeholder="Enter Villian's Weakness">
+
+        <label for="totalFollowers" class="col-sm-2">Followers</label>
+      <input type="text" name="totalFollowers" id="totalFollowers" class="form-control" [(ngModel)]="totalVictories"
+        placeholder="Enter Villian's Total Followers">
+  
+      <label for="totalVictories" class="col-sm-2">Victories</label>
+      <input type="text" name="totalVictories" id="totalVictories" class="form-control" [(ngModel)]="totalVictories"
+        placeholder="Enter Villian's Victories">
+  
+      <label for="description" class="col-sm-2">Description</label>
+      <input type="text" name="description" id="description" class="form-control" [(ngModel)]="description"
+        placeholder="Enter villian's Description">
+    </div>
+    <div class="ml-3 bd-highlight" style="width: 40%;">
+      <img [src]=photoFilePath height="250px;" width="200px;" alt="{{villianName}} Profile Picture">
+      <input type="file" (change)="uploadPhoto($event)" class="mt-2">
+    </div>
+  </div>
+  
+  <button class="btn btn-primary" (click)="addVillian()" *ngIf="villianEl.villianID == 0">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M12 2C6.485 2 2 6.485 2 12s4.485 10 10 10 10-4.485 10-10S17.515 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm3-9h-6v6h-2v-6H7V9h6V3h2v6h6v2z" />
+      </svg> -->
+    ADD
+  </button>
+  
+  <button class="btn btn-primary" (click)="editVillian()" *ngIf="villianEl.villianID != 0">
+    <!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+      </svg> -->
+    UPDATE
+  </button>
+  

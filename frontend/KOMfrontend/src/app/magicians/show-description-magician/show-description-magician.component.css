@@ -1,0 +1,39 @@
+.left-box {
+    background: linear-gradient(rgb(175 134 189), rgb(102, 126, 234));    
+    margin-top: 10px;
+    padding-left: 8px;
+    padding-top: 30px
+}
+
+.magic {
+    font-size: 15px;
+}
+
+.h3 {
+    font-weight: bold;
+    /* font-size: 30px; */
+    padding-top: 2vh;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(22, 66, 23);
+    filter: brightness(1) saturate(1.2);    
+}
+
+.right-box {
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 40px;
+    background: linear-gradient(rgb(205 90 90), rgb(178 193 134));
+}
+
+.container {
+    position: relative;
+}

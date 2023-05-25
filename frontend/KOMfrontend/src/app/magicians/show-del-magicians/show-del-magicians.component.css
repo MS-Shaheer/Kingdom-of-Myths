@@ -1,0 +1,38 @@
+.container {
+    /* background-image: url('./magicianBG.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h2 {
+    color: black;
+}
+
+.buttonColor {
+    background-color: rgb(142, 69, 133);
+    border-color: black;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #2676c7;
+}
+
+th {
+    color: #b72020;
+}
+
+.table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #f70018;
+}
+
+input {
+    width: 100px;
+    font-size: 10.5px;
+}
+
+a {
+    color: #b70b0b;
+}

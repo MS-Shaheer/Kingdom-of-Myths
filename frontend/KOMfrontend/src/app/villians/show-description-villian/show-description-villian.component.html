@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 left-box">
+                    <!-- <div class="container"> -->
+                    <img [src]="getVillianImageUrl(photoFilename)" alt="{{villianName}}'s Image" width="1100px" height="300px">
+                    <!-- </div> -->
+                    <h1 class="h3">{{villianName}}</h1>
+                    <p>Age: {{age}}</p>
+                    <p>Followers: {{totalFollowers}}</p>
+                    <p>Victories: {{totalVictories}}</p>
+                </div>
+                <div class="col-lg-9 col-md-8 right-box">
+                    <p class="description"><b><em>{{description}}</em></b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
